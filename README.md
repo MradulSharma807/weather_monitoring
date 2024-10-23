@@ -9,6 +9,7 @@ Responsive UI: A user-friendly interface built with React.js for easy interactio
 
 Technology Stack Section
 •	Language: JavaScript
+•	Database: sqlite3
 •	Backend Framework: Node.js (Express)
 •	Frontend Framework: React.js
 •	Tools: Postman for API testing
@@ -20,13 +21,14 @@ Installation
   cd weather_monitoring
 
 •	Install Dependencies: Navigate to both the backend and frontend directories and install the required packages.
-  # For backend
-  cd backend
-  npm install
+   # For backend
+   cd backend
+   npm install cors axios sqlite3
 
-  # For frontend
-  cd ../frontend
-  npm install
+   # For frontend
+   cd ../frontend
+   npm install
+
 
 •	Set Up Environment Variables: Create a .env file in the backend directory and add your OpenWeatherMap API key:
   OPENWEATHER_API_KEY=your_api_key_here
