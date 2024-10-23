@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('./images/weather_img2.jpg') no-repeat center center fixed;
+  /* Background image */
+  background-size: cover;
+
+}
+
+
+@keyframes clouds {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  /* Semi-transparent background for better readability */
+  border-radius: 10px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+.chart-container canvas {
+  position: relative;
+  /* Ensure canvas is properly positioned */
+  z-index: 1;
+  /* Bring it to the front if needed */
+}
+.chart-container {
+  position: relative;
+  max-width: 100%;
+  height: 400px;
+  /* Set a fixed height */
+  margin: 0 auto;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #cee7a0;
+}
+
+@media (max-width: 600px) {
+
+  th,
+  td {
+    font-size: 14px;
+  }
+
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+}
